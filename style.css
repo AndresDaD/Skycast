@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+/* Menú lateral */
+.sidebar {
+    width: 412px;
+    height: 1033px;
+    background-color: #003060;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 366px;
+    height: 162px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    width: 325px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #0E86D4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    width: 325px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #68BBE3;
+    color: #003060;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 12px;
+    color: #0E86D4; /* Ajuste del color del texto del footer */
+}
+
+/* Área de información del clima */
+.right {
+    width: calc(100% - 412px);
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#icono-clima {
+    max-width: 100px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Cards */
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
